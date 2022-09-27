@@ -3,31 +3,27 @@ package com.bridgelabz;
 import java.util.Scanner;
 
 public class factors {
-    public static void primeFactors(int n)
+    public static void main (String[]args)
     {
-        while (n%2==0)
-        {
-            System.out.print(2 + " ");
-            n /= 2;
-        }
-        for (int i = 3; i <= Math.sqrt(n); i+= 2)
-        {
-            while (n%i == 0)
-            {
-                System.out.print(i + " ");
-                n /= i;
-            }
-        }
 
-        if (n > 2)
-            System.out.print(n);
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a no whose factors are to be searched");
+        int num=sc.nextInt();
+        System.out.println( "Factors of " + num + " are " );
+        Factors (num);
     }
 
-    public static void main (String[] args)
+    static void Factors (int num)
     {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the number:");
-        int n=sc.nextInt();
-        primeFactors(n);
+
+        for (int i = 1; i <= (num/2); i++)
+        {
+            if (num % i == 0)
+            {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.print(num); //to print the no entered no aslo
+
     }
 }
