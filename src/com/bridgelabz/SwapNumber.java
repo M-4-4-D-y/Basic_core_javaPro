@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 import java.util.Scanner;
 
-public class swap_numbers {
+public class SwapNumber {
     static void swapTwoNumbers()
     {
        Scanner scanner = new Scanner(System.in);

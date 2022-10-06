@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 import java.util.Scanner;
 
-public class Quotient_Rmainder {
+public class QuotientRmainder {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
